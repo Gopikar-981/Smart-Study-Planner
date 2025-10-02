@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import "./Calendar.css"; // ✅ Add styles here
+import "./Calendar.css"; 
 
 function startOfMonth(d) {
   return new Date(d.getFullYear(), d.getMonth(), 1);
@@ -15,7 +15,7 @@ export default function Calendar({ tasks = [], onEdit }) {
   const monthStart = startOfMonth(cursor);
   const monthEnd = endOfMonth(cursor);
 
-  // Build weeks for current month
+  
   const weeks = useMemo(() => {
     const startWeekDay = monthStart.getDay();
     const days = [];

@@ -5,8 +5,8 @@ import DayCalendar from "./DayCalendar";
 
 const Dashboard = () => {
   const [time, setTime] = useState(new Date());
-  const [focusTime, setFocusTime] = useState(25 * 60); // 25 minutes
-  const [isRunning, setIsRunning] = useState(false); // track timer running
+  const [focusTime, setFocusTime] = useState(25 * 60); 
+  const [isRunning, setIsRunning] = useState(false); 
   const [tasks, setTasks] = useState([]);
   const navigate = useNavigate();
 
