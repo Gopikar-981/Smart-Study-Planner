@@ -1,0 +1,92 @@
+/* Sidebar container */
+.sidebar {
+  width: 220px;
+  background: #2b6ef6; /* blue background */
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Navigation list */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 10px 0;
+}
+
+/* Links */
+.sidebar a {
+  text-decoration: none;
+  color: white; /* default white text */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active link */
+.sidebar .active {
+  background-color: white;
+  color: #2b6ef6 !important;
+  font-weight: bold;
+}
+
+/* Buttons */
+.premium-btn,
+.add-btn {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.premium-btn {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+
+.premium-btn:hover {
+  opacity: 0.9;
+}
+
+.add-btn {
+  background: white;
+  color: #2b6ef6;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+.logo1{
+  color: black;
+}

@@ -1,0 +1,46 @@
+.day-calendar {
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #ddd;
+  max-height: 600px;   /* scrollable */
+  overflow-y: auto;
+  background: #fff;
+}
+
+.day-header {
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  background: #f7f7f7;
+  border-bottom: 2px solid #ddd;
+}
+
+.hour-row {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  min-height: 60px;
+}
+
+.hour-label {
+  width: 80px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 13px;
+  color: #666;
+  flex-shrink: 0;
+}
+
+.hour-slot {
+  flex: 1;
+  position: relative;
+  padding: 5px;
+}
+
+.task-box {
+  background: #e8f0ff;
+  border: 1px solid #b3d1ff;
+  border-radius: 6px;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
