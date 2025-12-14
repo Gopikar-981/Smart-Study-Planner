@@ -1,51 +1,92 @@
 .activities-container {
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .activities-container h1 {
-  margin-bottom: 20px;
-  color: #007bff;
+  margin-bottom: 32px;
+  font-size: 1.75rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .activities-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
-  border-radius: 8px;
+  background: white;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .activities-table th,
 .activities-table td {
-  padding: 12px 15px;
+  padding: 16px 20px;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e2e8f0;
 }
 
 .activities-table th {
-  background: #007bff;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
   color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .activities-table tr:hover {
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.activities-table tr:last-child td {
+  border-bottom: none;
 }
 
 .status {
-  padding: 5px 10px;
-  border-radius: 12px;
-  font-size: 0.9rem;
-  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
 }
 
 .status.pending {
-  background: #ffeeba;
-  color: #856404;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  color: #92400e;
 }
 
 .status.completed {
-  background: #d4edda;
-  color: #155724;
+  background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+  color: #065f46;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activities-container {
+    padding: 16px;
+  }
+
+  .activities-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .activities-table th,
+  .activities-table td {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .activities-table {
+    display: block;
+    overflow-x: auto;
+  }
 }
